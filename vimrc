@@ -13,7 +13,7 @@ set list
 " - Line numbers -
 set number
 
-" - Disalbe Cursorkeys -
+" - Disable Cursorkeys -
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
@@ -27,3 +27,21 @@ imap <right> <nop>
 " - Search -
 set ignorecase
 set smartcase
+
+" - etc -
+set autoread
+
+" - Vundle -
+filetype off "required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" original repos on github
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-bundler'
+Bundle 'scrooloose/nerdtree'
+
+filetype plugin indent on
