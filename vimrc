@@ -30,6 +30,13 @@ set smartcase
 
 " - etc -
 set autoread
+let mapleader = ","
+map <Leader>p <C-^> " Go to previous file
+map <Leader>w :w!<CR>
+
+" - NERDTree -
+autocmd vimenter * if !argc() | NERDTree | endif
+map <Leader>n :NERDTreeToggle<CR>
 
 " - Vundle -
 filetype off "required!
@@ -43,5 +50,6 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
