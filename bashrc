@@ -14,4 +14,6 @@ if [ ! -d "~/.vim" ]; then
 fi
 
 # Run rbenv
-eval "$(rbenv init -)" 2>/dev/null
+if hash xmodmap 2>/dev/null; then
+  eval "$(rbenv init -)" 
+fi
