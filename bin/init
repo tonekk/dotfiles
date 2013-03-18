@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Dirname of directory where all my dotfiles are
+DOTFILES="~/etc"
+
+# Config files array
+CONFIGFILES=(bashrc vimrc tmux.conf)
+
+# Config directories array
+CONFIGDIRS=(bin vim)
+
+# Create directory syslinks
+for DIR in CONFIGDIRS
+do
+  if [ ! -d "~/.$DIR" ]; then
+    ln -s "$DOTFILES/$DIR" "~/.$DIR"
+  fi
+done
+
+# Create configfiles to load real configfiles
+for FILE in CONFIGFILES
+do
+  if [ ! -f "~/.$FILE" ]; then
+    echo "source \"$DOTFILES/$FILE\"" > "~/.$FILE"
+  fi
+done
