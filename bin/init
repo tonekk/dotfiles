@@ -27,4 +27,7 @@ do
   fi
 done
 
+# .gitconfig special case
+#if [ ! -f "$HOME/.gitconfig" ]
+
 echo "All done"
