@@ -9,3 +9,5 @@
 	p = pull
 	pu = push
 	st = status
+[color]
+	ui = true
