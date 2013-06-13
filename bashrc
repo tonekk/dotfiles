@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# My prompt (keeping things minimal)
-export PS1="\w: "
+function git_branch {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo " [$(tput setaf 4)"${ref#refs/heads/}"$(tput sgr0)]"
+}
+
+# My prompt w/ git branch
+export PS1="\$(tput bold)\$(tput setaf 4)\w\$(tput sgr0)\$(git_branch): "
 
 # Adding extra ~/.bin to path
 export PATH="~/.bin:$PATH"
@@ -22,3 +27,4 @@ fi
 if hash xmodmap 2>/dev/null; then
   eval "$(rbenv init -)" 
 fi
+alias redis="sudo redis-server /etc/redis/6379.conf"
