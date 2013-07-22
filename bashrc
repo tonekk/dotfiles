@@ -16,12 +16,13 @@ alias g="git"
 alias v="vim"
 alias t="tmux"
 alias z="zeus"
-alias reload="rm $CONFIGGILES && dot-files install && source ~/.bashrc"
+alias connect="ssh finn@178.79.137.198"
+alias redis="sudo redis-server /etc/redis/6379.conf"
 
 # On e.g. ubuntu, remap casplock
-if hash xmodmap 2>/dev/null; then
-  xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
-fi
+#if hash xmodmap 2>/dev/null; then
+#  xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+#fi
 
 # Run rbenv
 if hash xmodmap 2>/dev/null; then
