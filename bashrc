@@ -29,3 +29,7 @@ if hash xmodmap 2>/dev/null; then
   eval "$(rbenv init -)" 
 fi
 alias redis="sudo redis-server /etc/redis/6379.conf"
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+# Vi Mode
+set -o vi
