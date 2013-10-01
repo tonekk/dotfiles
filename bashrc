@@ -34,3 +34,4 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 # Vi Mode
 set -o vi
 EDITOR="vim"
+bind -m vi-insert "\C-l":clear-screen
