@@ -29,3 +29,7 @@ if hash rbenv 2>/dev/null; then
   eval "$(rbenv init -)" 
 fi
 alias redis="sudo redis-server /etc/redis/6379.conf"
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+# vim <3
+EDITOR="vim"
