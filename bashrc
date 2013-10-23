@@ -31,7 +31,5 @@ fi
 alias redis="sudo redis-server /etc/redis/6379.conf"
 export PATH="$HOME/.rbenv/shims:$PATH"
 
-# Vi Mode
-set -o vi
+# vim <3
 EDITOR="vim"
-bind -m vi-insert "\C-l":clear-screen
