@@ -5,11 +5,12 @@ DOTFILES="$HOME/etc"
 
 # Config files array
 CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
+SYMLINK_FILES=(liquidpromptrc)
 
 # Config directories array
 CONFIGDIRS=(bin vim)
 
-# Create directory syslinks
+# Create directory symlinks
 for DIR in "${CONFIGDIRS[@]}"
 do
   if [ ! -d "$HOME/.$DIR" ]; then
@@ -23,6 +24,15 @@ for FILE in "${CONFIGFILES[@]}"
 do
   if [ ! -f "$HOME/.$FILE" ]; then
     echo "source $DOTFILES/$FILE" >"$HOME/.$FILE"
+    echo "Created $HOME/.$FILE"
+  fi
+done
+
+# Create symlinks
+for FILE in "${SYMLINK_FILES[@]}"
+do
+  if [ ! -f "$HOME/.$FILE" ]; then
+    ln -s "$DOTFILES/$FILE" "$HOME/.$FILE"
     echo "Created $HOME/.$FILE"
   fi
 done
