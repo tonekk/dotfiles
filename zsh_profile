@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/zsh
 
-source $HOME/etc/bashrc
+source $HOME/etc/zshrc
