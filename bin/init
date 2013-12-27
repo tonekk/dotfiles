@@ -4,7 +4,7 @@
 DOTFILES="$HOME/etc"
 
 # Config files array
-CONFIGFILES=(bashrc bash_profile vimrc tmux.conf)
+CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
 
 # Config directories array
 CONFIGDIRS=(bin vim)
