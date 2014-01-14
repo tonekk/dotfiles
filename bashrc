@@ -19,6 +19,10 @@ alias z="zeus"
 alias connect="ssh finn@178.79.137.198"
 alias redis="sudo redis-server /etc/redis/6379.conf"
 
+# Common typos
+alias cd..="cd .."
+alias gist="git st"
+
 # On e.g. ubuntu, remap casplock
 #if hash xmodmap 2>/dev/null; then
 #  xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
