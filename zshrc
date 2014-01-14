@@ -13,6 +13,10 @@ alias z="zeus"
 alias compress="tar cvzf"
 alias connect="ssh finn@178.79.137.198"
 
+# Common typos
+alias cd..="cd .."
+alias gist="git st"
+
 export PATH="$HOME/.rbenv/shims:$PATH"
 
 # vim <3
