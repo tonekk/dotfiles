@@ -21,3 +21,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 # vim <3
 EDITOR="vim"
+
+# chruby
+source /usr/local/share/chruby/chruby.sh
+chruby ruby-2.0.0-p353
