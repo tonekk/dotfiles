@@ -39,4 +39,4 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 EDITOR="vim"
 
 # git completion
-source ./git-completion.bash
+source $HOME/etc/git-completion.bash
