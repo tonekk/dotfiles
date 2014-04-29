@@ -37,3 +37,6 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 # vim <3
 EDITOR="vim"
+
+# git completion
+source git-completion.bash

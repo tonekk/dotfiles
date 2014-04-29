@@ -25,3 +25,6 @@ EDITOR="vim"
 # chruby
 source /usr/local/share/chruby/chruby.sh
 chruby ruby-2.0.0
+
+# git completion
+source git-completion.bash
