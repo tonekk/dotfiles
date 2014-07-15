@@ -1,12 +1,16 @@
 [user]
-	name = Finn-Lennart Heemeyer
-	email = finn@heemeyer.net
+  name = Finn-Lennart Heemeyer
+  email = finn@heemeyer.net
 [alias]
-	ci = commit
-	co = checkout
-	br = branch
-	p = pull
-	pu = push
-	st = status
+  ci = commit
+  co = checkout
+  br = branch
+  p = pull
+  pu = push
+  st = status
 [color]
-	ui = true
+  ui = true
+[push]
+  default = simple
+[core]
+  editor = /usr/bin/vim
