@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Dirname of directory where all my dotfiles are
-DOTFILES="$HOME/etc"
+DOTFILES=$(echo "$0" | sed "s/\/bin\/init//")
 
 # Config files array
 CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
-SYMLINK_FILES=(liquidpromptrc)
+SYMLINK_FILES=(liquidpromptrc xvimrc)
 
 # Config directories array
 CONFIGDIRS=(bin vim)
@@ -38,6 +38,10 @@ do
 done
 
 # .gitconfig special case
-#if [ ! -f "$HOME/.gitconfig" ]
+if [ ! -f "$HOME/.gitconfig" ]; then
+  echo "[include]" > "$HOME/.gitconfig"
+  echo "    path = $DOTFILES/gitconfig" >> "$HOME/.gitconfig"
+  echo "Created $HOME/.gitconfig"
+fi
 
 echo "All done"
