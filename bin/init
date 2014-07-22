@@ -1,7 +1,12 @@
 #!/bin/bash
 
+#################################################
+# This script creates all the neccessary symlinks
+# ======= execute me from $HOME directory =======
+#################################################
+
 # Dirname of directory where all my dotfiles are
-DOTFILES=$(echo "$0" | sed "s/\/bin\/init//")
+DOTFILES="$HOME/$(echo "$0" | sed "s/\/bin\/init//")" 
 
 # Config files array
 CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
