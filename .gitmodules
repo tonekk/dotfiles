@@ -4,3 +4,6 @@
 [submodule "liquidprompt"]
 	path = liquidprompt
 	url = https://github.com/nojhan/liquidprompt
+[submodule "z"]
+	path = z
+	url = https://github.com/rupa/z.git
