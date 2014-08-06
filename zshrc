@@ -28,3 +28,6 @@ chruby ruby-2.0.0
 
 # git completion
 source $HOME/etc/git-completion.bash
+
+# z - jump around
+. $HOME/etc/z/z.sh
