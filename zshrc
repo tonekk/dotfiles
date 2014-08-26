@@ -9,7 +9,6 @@ export PATH="~/.bin:$PATH"
 alias g="git"
 alias v="vim"
 alias t="tmux"
-alias z="zeus"
 alias compress="tar cvzf"
 alias connect="ssh finn@178.79.137.198"
 
