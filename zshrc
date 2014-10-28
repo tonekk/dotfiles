@@ -12,6 +12,8 @@ alias t="tmux"
 alias compress="tar cvzf"
 alias connect="ssh finn@178.79.137.198"
 
+alias vimtoday="vim $(ruby -e 'print "#{Time.now.strftime("%Y-%m-%d")}.md"')"
+
 # Common typos
 alias cd..="cd .."
 alias gist="git st"
