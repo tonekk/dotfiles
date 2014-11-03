@@ -18,10 +18,20 @@ alias vimtoday="vim $(ruby -e 'print "#{Time.now.strftime("%Y-%m-%d")}.md"')"
 alias cd..="cd .."
 alias gist="git st"
 
-export PATH="$HOME/.rbenv/shims:$PATH"
-
 # vim <3
-EDITOR="vim"
+export EDITOR="vim"
+
+# zsh history not enabled by default
+export HISTFILE="/Users/finn/.zsh_history"
+export SAVEHIST=999
+export HISTSIZE=999
+setopt APPEND_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt EXTENDED_HISTORY
+
+# For some reason reverse-i-search
+# does not work by default
+bindkey '^R' history-incremental-search-backward
 
 # chruby
 source /usr/local/share/chruby/chruby.sh
