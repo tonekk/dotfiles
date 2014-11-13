@@ -1,12 +1,11 @@
 #!/bin/zsh
 
-source $HOME/etc/liquidprompt/liquidprompt
-
-# Adding extra ~/.bin to path
-export PATH="~/.bin:$PATH"
+# Needed on some systems
+export LANG=en_US.UTF-8 
+# Adding extra stuff to path
+export PATH=$HOME/.bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Aliases
-alias g="git"
 alias v="vim"
 alias t="tmux"
 alias compress="tar cvzf"
@@ -42,3 +41,15 @@ source $HOME/etc/git-completion.bash
 
 # z - jump around
 . $HOME/etc/z/z.sh
+
+#############
+# OH MY ZSH #
+#############
+ZSH_THEME="bira"
+DISABLE_AUTO_UPDATE="true"
+# ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+plugins=(git)
+
+export ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh

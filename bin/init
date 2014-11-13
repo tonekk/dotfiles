@@ -10,10 +10,10 @@ DOTFILES="$HOME/$(echo "$0" | sed "s/\/bin\/init//")"
 
 # Config files array
 CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
-SYMLINK_FILES=(liquidpromptrc xvimrc)
+SYMLINK_FILES=(xvimrc)
 
 # Config directories array
-CONFIGDIRS=(bin vim)
+CONFIGDIRS=(bin vim oh-my-zsh)
 
 # Create directory symlinks
 for DIR in "${CONFIGDIRS[@]}"
