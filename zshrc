@@ -14,12 +14,22 @@ alias rt="bin/spring rake"
 rtt () { bin/spring rake test TEST="$@" }
 
 # zeus workaround for https://github.com/burke/zeus/issues/469
-ze () { zeus $@; stty sane }
+zet () { ARGS=$@; zeus test $@; ZE_EC=$?; stty sane; if [ $ZE_EC = 2 ]; then zet $ARGS; fi }
+zer () { zeus rake; ZE_EC=$?; stty sane; if [ $ZE_EC = 2 ]; then zeus rake; fi }
 
 alias compress="tar cvzf"
 alias connect="ssh finn@178.79.137.198"
 
 alias vimtoday="vim $(ruby -e 'print "#{Time.now.strftime("%Y-%m-%d")}.md"')"
+
+alias ssh-jovoto="ssh -i ~/.ssh/jovoto fheemeyer@54.220.77.180"
+alias ssh-jovoto-blog="ssh -i ~/.ssh/jovoto fheemeyer@54.73.204.199"
+
+alias zconf="vim ~/etc/zshrc"
+alias reload="source ~/etc/zshrc"
+alias vimconf="vim ~/etc/vim/vimrc"
+
+alias p="postgres -D /usr/local/var/postgres"
 
 # Common typos
 alias cd..="cd .."
