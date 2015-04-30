@@ -62,6 +62,16 @@ source $HOME/etc/git-completion.bash
 # z - jump around
 . $HOME/etc/z/z.sh
 
+# super useful: many cd steps in one
+function up() {
+  i=$1
+  while [ $i -gt 0 ]
+  do
+     cd ..
+     i=$(($i - 1))
+  done
+}
+
 #############
 # OH MY ZSH #
 #############
