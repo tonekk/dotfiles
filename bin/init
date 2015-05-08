@@ -13,7 +13,7 @@ CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
 SYMLINK_FILES=(xvimrc)
 
 # Config directories array
-CONFIGDIRS=(bin vim oh-my-zsh)
+CONFIGDIRS=(bin vim oh-my-zsh tmux)
 
 # Create directory symlinks
 for DIR in "${CONFIGDIRS[@]}"
