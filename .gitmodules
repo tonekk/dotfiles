@@ -7,3 +7,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "tmux"]
+	path = tmux
+	url = git@github.com:tonekk/tmux.git
