@@ -17,6 +17,7 @@ rtt () { bin/spring rake test TEST="$@" }
 zet () { ARGS=$@; zeus test $@; ZE_EC=$?; stty sane; if [ $ZE_EC = 2 ]; then zet $ARGS; fi }
 zer () { zeus rake; ZE_EC=$?; stty sane; if [ $ZE_EC = 2 ]; then zeus rake; fi }
 
+alias pg="postgres -D /usr/local/var/postgres"
 alias compress="tar cvzf"
 alias connect="ssh finn@178.79.137.198"
 
@@ -83,3 +84,5 @@ plugins=(git)
 
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+chruby 2.1
