@@ -6,15 +6,8 @@ my dotfiles
 
 ## Installation
 
-To set up my environment, we have to follow these steps:
+To setup everything in `~/etc`, execute the following command:
 
-* `git clone https://github.com/tonekk/dotfiles`
-* `mv dotfiles etc`
-* `cd etc && git submodule init && git submodule update`
-* `cd && etc/bin/init`
-
-To setup vim, also exec:
-
-* `cd ~/etc/vim && git submodule init && git submodule update`
-* `vim`
-* (in Vim:) `:BundleInstall`
+```js
+cd && git clone git@github.com:tonekk/dotfiles.git etc && cd etc && git submodule init && git submodule update && cd && etc/bin/init && cd ~/etc/tmux && git submodule init && git submodule update && cd ~/etc/vim && git submodule init && git submodule update && vim -c BundleInstall
+```
