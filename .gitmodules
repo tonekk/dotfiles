@@ -7,3 +7,6 @@
 [submodule "tmux"]
 	path = tmux
 	url = git@github.com:tonekk/tmux.git
+[submodule "vim"]
+	path = vim
+	url = git@github.com:tonekk/vim.git
