@@ -21,6 +21,8 @@ alias pg="postgres -D /usr/local/var/postgres"
 alias compress="tar cvzf"
 alias connect="ssh finn@178.79.137.198"
 
+alias zserver="foreman run rails s -p 5000"
+
 alias vimtoday="vim $(ruby -e 'print "#{Time.now.strftime("%Y-%m-%d")}.md"')"
 
 alias ssh-jovoto="ssh -i ~/.ssh/jovoto fheemeyer@54.220.77.180"
@@ -34,7 +36,7 @@ alias p="postgres -D /usr/local/var/postgres"
 
 # Common typos
 alias cd..="cd .."
-alias gist="git st"
+alias gist="git st ."
 
 # vim <3
 export EDITOR="vim"
