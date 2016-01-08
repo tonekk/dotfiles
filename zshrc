@@ -87,4 +87,8 @@ plugins=(git)
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-chruby 2.1
+# set golang runtime path
+export GOPATH=$HOME/etc/go
+
+# switch to newest chruby if chruby installed
+command -v chruby && chruby $(chruby | tail -n 1 | awk '{print $NF}')
