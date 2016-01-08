@@ -8,6 +8,6 @@ my dotfiles
 
 To setup everything in `~/etc`, execute the following command:
 
-```js
+```sh
 source <(curl -sL http://j.mp/tonekk-dotfiles)
 ```
