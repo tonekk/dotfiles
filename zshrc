@@ -91,4 +91,5 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=$HOME/etc/go
 
 # switch to newest chruby if chruby installed
-command -v chruby && chruby $(chruby | tail -n 1 | awk '{print $NF}')
+command -v chruby >/dev/null && \
+  chruby $(chruby | tail -n 1 | awk '{print $NF}')
