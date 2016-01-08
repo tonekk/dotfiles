@@ -2,51 +2,49 @@
 
 #################################################
 # This script creates all the neccessary symlinks
-# ======= execute me from $HOME directory =======
 #################################################
 
 # Dirname of directory where all my dotfiles are
-DOTFILES="$HOME/$(echo "$0" | sed "s/\/bin\/init//")" 
+DOTFILES="$HOME/etc" 
 
 # Config files array
 CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
 SYMLINK_FILES=(xvimrc)
 
 # Config directories array
-CONFIGDIRS=(bin vim oh-my-zsh tmux)
+CONFIGDIRS=(bin vim oh-my-zsh tmux go tmuxinator)
+
+# Change to $HOME if not there already
+[ "$(pwd)" != "$HOME" ] && cd ~
 
 # Create directory symlinks
 for DIR in "${CONFIGDIRS[@]}"
 do
-  if [ ! -d "$HOME/.$DIR" ]; then
-    ln -s "$DOTFILES/$DIR" "$HOME/.$DIR"
-    echo "Created $HOME/.$DIR"
-  fi
+  [ -L "$HOME/.$DIR" ] && rm "$HOME/.$DIR"
+  ln -s "$DOTFILES/$DIR" "$HOME/.$DIR"
+  echo "Created $HOME/.$DIR"
 done
 
 # Create configfiles to load real configfiles
 for FILE in "${CONFIGFILES[@]}"
 do
-  if [ ! -f "$HOME/.$FILE" ]; then
-    echo "source $DOTFILES/$FILE" >"$HOME/.$FILE"
-    echo "Created $HOME/.$FILE"
-  fi
+  [ -f "$HOME/.$FILE" ] && rm "$HOME/.$FILE"
+  echo "source $DOTFILES/$FILE" >"$HOME/.$FILE"
+  echo "Created $HOME/.$FILE"
 done
 
 # Create symlinks
 for FILE in "${SYMLINK_FILES[@]}"
 do
-  if [ ! -f "$HOME/.$FILE" ]; then
-    ln -s "$DOTFILES/$FILE" "$HOME/.$FILE"
-    echo "Created $HOME/.$FILE"
-  fi
+  [ -f "$HOME/.$FILE" ] && rm "$HOME/.$FILE"
+  echo "source $DOTFILES/$FILE" >"$HOME/.$FILE"
+  echo "Created $HOME/.$FILE"
 done
 
 # .gitconfig special case
-if [ ! -f "$HOME/.gitconfig" ]; then
-  echo "[include]" > "$HOME/.gitconfig"
-  echo "    path = $DOTFILES/gitconfig" >> "$HOME/.gitconfig"
-  echo "Created $HOME/.gitconfig"
-fi
+[ -f "$HOME/.gitconfig" ] && rm "$HOME/.gitconfig"
+echo "[include]" > "$HOME/.gitconfig"
+echo "    path = $DOTFILES/gitconfig" >> "$HOME/.gitconfig"
+echo "Created $HOME/.gitconfig"
 
 echo "All done"
