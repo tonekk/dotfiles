@@ -75,6 +75,10 @@ function up() {
   done
 }
 
+# Golang
+export GOPATH=$HOME/etc/go
+export PATH=$GOPATH/bin:$PATH
+
 #############
 # OH MY ZSH #
 #############
@@ -86,9 +90,6 @@ plugins=(git)
 
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-
-# set golang runtime path
-export GOPATH=$HOME/etc/go
 
 # switch to newest chruby if chruby installed
 command -v chruby >/dev/null && \
