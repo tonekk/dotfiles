@@ -1,0 +1,11 @@
+# ~/.tmuxinator/rails.yml
+name: <%= @settings['n'] %>
+root: .
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim
+        - zsh
+  - git: git status
+  - shell: zsh
