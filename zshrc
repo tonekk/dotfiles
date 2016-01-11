@@ -82,11 +82,11 @@ export PATH=$GOPATH/bin:$PATH
 #############
 # OH MY ZSH #
 #############
-ZSH_THEME="bira"
+ZSH_CUSTOM="$HOME/etc/zsh"
+ZSH_THEME="bullet-train"
 DISABLE_AUTO_UPDATE="true"
-# ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
