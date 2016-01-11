@@ -59,8 +59,8 @@ export DISABLE_AUTO_TITLE=true
 # does not work by default
 bindkey '^R' history-incremental-search-backward
 
-# git completion
-source $HOME/etc/git-completion.bash
+# color scheme
+export TERM=xterm-256color
 
 # z - jump around
 . $HOME/etc/z/z.sh
