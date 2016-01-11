@@ -7,7 +7,7 @@ export PATH=$HOME/.bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Aliases
 alias v="vim"
-alias t="tmux"
+alias t="tmuxinator"
 alias r="rake"
 
 alias rt="bin/spring rake"
