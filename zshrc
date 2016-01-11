@@ -86,7 +86,7 @@ ZSH_CUSTOM="$HOME/etc/zsh"
 ZSH_THEME="bullet-train"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(zsh-syntax-highlighting)
+plugins=(git brew tmux npm zsh-syntax-highlighting)
 
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
