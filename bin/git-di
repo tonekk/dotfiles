@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-git diff --color | diff-so-fancy | less
+git diff --color $1 $2 $3 $4 | diff-so-fancy | less
