@@ -4,6 +4,8 @@
 export LANG=en_US.UTF-8 
 # Adding extra stuff to path
 export PATH=$HOME/.bin:$HOME/bin:/usr/local/bin:$PATH
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Aliases
 alias v="vim"
@@ -32,6 +34,9 @@ alias zconf="vim ~/etc/zshrc"
 alias reload="source ~/etc/zshrc"
 alias vimconf="vim ~/etc/vim/vimrc"
 
+alias enc='openssl enc -aes-256-cbc -in "$@"'
+alias dec='openssl enc -d -aes-256-cbc -in "$@"'
+
 alias p="postgres -D /usr/local/var/postgres"
 
 # Common typos
@@ -40,10 +45,6 @@ alias gist="git st ."
 
 # vim <3
 export EDITOR="vim"
-
-# chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # zsh history not enabled by default
 export HISTFILE="/Users/finn/.zsh_history"
@@ -89,5 +90,9 @@ export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # switch to newest chruby if chruby installed
-command -v chruby >/dev/null && \
+CHRUBY_FILE=/usr/local/opt/chruby/share/chruby/chruby.sh
+CHRUBY_AUTO_FILE=/usr/local/opt/chruby/share/chruby/chruby.sh
+if [ -f $CHRUBY_FILE ]; then
+  source $CHRUBY_FILE && source $CHRUBY_AUTO_FILE && \
   chruby $(chruby | tail -n 1 | awk '{print $NF}')
+fi
