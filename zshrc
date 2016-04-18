@@ -10,25 +10,9 @@ export NVM_DIR=~/.nvm
 # Aliases
 alias v="vim"
 alias t="tmuxinator"
-alias r="rake"
-
-alias rt="bin/spring rake"
-rtt () { bin/spring rake test TEST="$@" }
-
-# zeus workaround for https://github.com/burke/zeus/issues/469
-zet () { ARGS=$@; zeus test $@; ZE_EC=$?; stty sane; if [ $ZE_EC = 2 ]; then zet $ARGS; fi }
-zer () { zeus rake; ZE_EC=$?; stty sane; if [ $ZE_EC = 2 ]; then zeus rake; fi }
-
 alias pg="postgres -D /usr/local/var/postgres"
-alias compress="tar cvzf"
-alias connect="ssh finn@178.79.137.198"
-
-alias zserver="foreman run rails s -p 5000"
 
 alias vimtoday="vim $(ruby -e 'print "#{Time.now.strftime("%Y-%m-%d")}.md"')"
-
-alias ssh-jovoto="ssh -i ~/.ssh/jovoto fheemeyer@54.220.77.180"
-alias ssh-jovoto-blog="ssh -i ~/.ssh/jovoto fheemeyer@54.73.204.199"
 
 alias zconf="vim ~/etc/zshrc"
 alias reload="source ~/etc/zshrc"
@@ -36,8 +20,6 @@ alias vimconf="vim ~/etc/vim/vimrc"
 
 alias enc='openssl enc -aes-256-cbc -in "$@"'
 alias dec='openssl enc -d -aes-256-cbc -in "$@"'
-
-alias p="postgres -D /usr/local/var/postgres"
 
 # Common typos
 alias cd..="cd .."
@@ -91,7 +73,7 @@ source $ZSH/oh-my-zsh.sh
 
 # switch to newest chruby if chruby installed
 CHRUBY_FILE=/usr/local/opt/chruby/share/chruby/chruby.sh
-CHRUBY_AUTO_FILE=/usr/local/opt/chruby/share/chruby/chruby.sh
+CHRUBY_AUTO_FILE=/usr/local/opt/chruby/share/chruby/auto.sh
 if [ -f $CHRUBY_FILE ]; then
   source $CHRUBY_FILE && source $CHRUBY_AUTO_FILE && \
   chruby $(chruby | tail -n 1 | awk '{print $NF}')
