@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
@@ -698,7 +702,7 @@
 			<key>Action</key>
 			<integer>11</integer>
 			<key>Text</key>
-			<string>0x02 0x2C</string>
+			<string>0x02 0x2C 0x15</string>
 		</dict>
 		<key>0x74-0x100000</key>
 		<dict>
@@ -839,11 +843,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>635 607 445 136 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>494 326 606 456 0 0 1440 877 </string>
+	<string>494 355 606 456 0 0 1440 877 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 382 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>283 166 665 502 0 0 1440 877 </string>
+	<string>5 33 729 844 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 4 1063 873 0 0 1440 877 </string>
+	<string>0 372 665 502 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>621 -52 745 482 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1590,6 +1596,12 @@
 			<string>/Users/admin</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
+	<key>NoSyncSuppressAnnyoingBellOffer</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>474285618.40420002</real>
 	<key>NoSyncTimeOfLastPromo</key>
@@ -1610,6 +1622,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>2</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1662,7 +1676,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-12T09:15:54Z</date>
+	<date>2016-04-15T13:09:37Z</date>
+	<key>SUSkippedVersion</key>
+	<string>2.9.20160313</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1674,9 +1690,9 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.40000000596046448</real>
 	<key>SwitchTabModifier</key>
-	<integer>4</integer>
+	<integer>9</integer>
 	<key>SwitchWindowModifier</key>
-	<integer>6</integer>
+	<integer>4</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
