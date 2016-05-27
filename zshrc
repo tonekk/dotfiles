@@ -9,7 +9,7 @@ export NVM_DIR=~/.nvm
 
 # Aliases
 alias v="vim"
-alias t="tmuxinator"
+alias t="tmux"
 alias pg="postgres -D /usr/local/var/postgres"
 
 alias vimtoday="vim $(ruby -e 'print "#{Time.now.strftime("%Y-%m-%d")}.md"')"
