@@ -24,6 +24,7 @@ alias dec='openssl enc -d -aes-256-cbc -in "$@"'
 # Common typos
 alias cd..="cd .."
 alias gist="git st ."
+alias noprompt="export PS1='$ ' && clear"
 
 # vim <3
 export EDITOR="vim"
