@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #################################################
 # This script creates all the neccessary symlinks
@@ -8,11 +8,12 @@
 DOTFILES="$HOME/etc" 
 
 # Config files array
-CONFIGFILES=(zshrc zsh_profile bashrc bash_profile vimrc tmux.conf)
+CONFIGFILES=(bashrc bash_profile vimrc tmux.conf)
+PREZTOFILES=(zlogin zlogout zpreztorc zprofile zshenv zshrc)
 SYMLINK_FILES=(xvimrc)
 
 # Config directories array
-CONFIGDIRS=(bin vim oh-my-zsh tmux go tmuxinator)
+CONFIGDIRS=(bin vim zprezto tmux go tmuxinator)
 
 # Change to $HOME if not there already
 [ "$(pwd)" != "$HOME" ] && cd ~
@@ -39,6 +40,14 @@ do
   [ -f "$HOME/.$FILE" ] && rm "$HOME/.$FILE"
   echo "source $DOTFILES/$FILE" >"$HOME/.$FILE"
   echo "Created $HOME/.$FILE"
+done
+
+# prezto
+for FILE in "${PREZTOFILES[@]}"
+do
+  [ -L "$HOME/.$FILE" ] && rm -f "$HOME/.$FILE"
+  ln -s "$DOTFILES/zprezto/runcoms/$FILE" "$HOME/.$FILE"
+  echo "Created prezto file $HOME/.$FILE"
 done
 
 # .gitconfig special case
