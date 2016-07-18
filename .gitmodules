@@ -4,9 +4,6 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh
 [submodule "tmux"]
 	path = tmux
 	url = git@github.com:tonekk/tmux.git
@@ -16,3 +13,6 @@
 [submodule "zsh/plugins/k"]
 	path = zsh/plugins/k
 	url = https://github.com/rimraf/k
+[submodule "prezto"]
+	path = zprezto
+	url = git@github.com:tonekk/prezto.git
