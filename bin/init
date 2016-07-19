@@ -37,7 +37,7 @@ done
 # Create symlinks
 for FILE in "${SYMLINK_FILES[@]}"
 do
-  [ -L "$HOME/.$FILE" ] && rm "$HOME/.$FILE"
+  [ -L "$HOME/.$FILE" ] && rm -f "$HOME/.$FILE"
   ln -s "$DOTFILES/$FILE" "$HOME/.$FILE"
   echo "Created $HOME/.$FILE"
 done
