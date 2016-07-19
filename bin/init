@@ -10,7 +10,7 @@ DOTFILES="$HOME/etc"
 # Config files array
 CONFIGFILES=(bashrc bash_profile vimrc tmux.conf)
 PREZTOFILES=(zlogin zlogout zpreztorc zprofile zshenv zshrc)
-SYMLINK_FILES=(xvimrc)
+SYMLINK_FILES=(hyperterm.js xvimrc)
 
 # Config directories array
 CONFIGDIRS=(bin vim zprezto tmux go tmuxinator)
@@ -37,8 +37,8 @@ done
 # Create symlinks
 for FILE in "${SYMLINK_FILES[@]}"
 do
-  [ -f "$HOME/.$FILE" ] && rm "$HOME/.$FILE"
-  echo "source $DOTFILES/$FILE" >"$HOME/.$FILE"
+  [ -L "$HOME/.$FILE" ] && rm "$HOME/.$FILE"
+  ln -s "$DOTFILES/$FILE" "$HOME/.$FILE"
   echo "Created $HOME/.$FILE"
 done
 
