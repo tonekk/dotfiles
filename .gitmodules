@@ -10,3 +10,6 @@
 [submodule "prezto"]
 	path = zprezto
 	url = git@github.com:tonekk/prezto.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:tonekk/nvim.git
