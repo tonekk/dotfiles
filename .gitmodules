@@ -17,4 +17,4 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:tonekk/nvim.git
-	branch = master
+	branch = main
