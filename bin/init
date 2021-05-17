@@ -50,6 +50,9 @@ do
   echo "Created prezto file $HOME/.$FILE"
 done
 
+# nvim
+ln -s $DOTFILES/nvim/init.vim $HOME/.config/nvim/init.vim
+
 # .gitconfig special case
 [ -f "$HOME/.gitconfig" ] && rm "$HOME/.gitconfig"
 echo "[include]" > "$HOME/.gitconfig"
