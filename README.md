@@ -9,7 +9,7 @@ my dotfiles
 To setup everything in `~/etc`, execute the following command:
 
 ```sh
-source <(curl -sL http://bit.ly/tonekk-dotfiles-setup)
+source <(curl -sL http://bit.ly/tonekk-dotfiles-script)
 ```
 
 ### Post-install
