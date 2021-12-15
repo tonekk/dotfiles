@@ -8,12 +8,12 @@
 DOTFILES="$HOME/etc" 
 
 # Config files array
-CONFIGFILES=(bashrc bash_profile vimrc tmux.conf)
+CONFIGFILES=(bashrc bash_profile tmux.conf)
 PREZTOFILES=(zlogin zlogout zpreztorc zprofile zshenv zshrc)
-SYMLINK_FILES=(hyperterm.js xvimrc)
+SYMLINK_FILES=(hyperterm.js)
 
 # Config directories array
-CONFIGDIRS=(bin vim zprezto tmux go tmuxinator)
+CONFIGDIRS=(bin zprezto tmux go tmuxinator)
 
 # Change to $HOME if not there already
 [ "$(pwd)" != "$HOME" ] && cd ~
