@@ -18,3 +18,6 @@
 	path = nvim
 	url = git@github.com:tonekk/nvim.git
 	branch = main
+[submodule "nvm"]
+	path = nvm
+	url = https://github.com/nvm-sh/nvm.git
