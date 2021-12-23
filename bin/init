@@ -51,7 +51,8 @@ do
 done
 
 # nvim
-ln -s $HOME/.local/share/nvim $DOTFILES/nvim
+mkdir -p $HOME/.local/share/
+ln -s $DOTFILES/nvim $HOME/.local/share/nvim
 
 # .gitconfig special case
 [ -f "$HOME/.gitconfig" ] && rm "$HOME/.gitconfig"
