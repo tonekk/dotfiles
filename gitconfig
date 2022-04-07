@@ -26,3 +26,5 @@
   default = simple
 [core]
   editor = /usr/local/bin/nvim
+[commit]
+  verbose = true
