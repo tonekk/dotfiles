@@ -8,6 +8,7 @@
   p = pull
   pu = push
   st = status
+  fixup = "!fn() { git commit --fixup ${1} && GIT_EDITOR=true git rebase --autosquash -i ${1}^; }; fn"
 [color]
   ui = true
 [color "diff"]
