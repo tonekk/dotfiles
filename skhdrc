@@ -1,0 +1,9 @@
+cmd - h [
+   "iterm2" : skhd -k "ctrl - b" && skhd -k "p"
+]
+cmd - l [
+   "iterm2" : skhd -k "ctrl - b" && skhd -k "n"
+]
+cmd - t [
+   "iterm2" : skhd -k "ctrl - b" && skhd -k "c"
+]
