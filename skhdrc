@@ -4,6 +4,20 @@ cmd - h [
 cmd - l [
    "iterm2" : skhd -k "ctrl - b" && skhd -k "n"
 ]
+cmd - k [
+   "iterm2" : skhd -k "ctrl - b" && skhd -k "up"
+]
+cmd - j [
+   "iterm2" : skhd -k "pagedown"
+]
+
 cmd - t [
    "iterm2" : skhd -k "ctrl - b" && skhd -k "c"
+]
+
+cmd - x [
+   "iterm2" : skhd -k "ctrl - b" && skhd -k "x"
+]
+cmd - s [
+   "iterm2" : skhd -k "ctrl - b" && skhd -k "f1"
 ]
