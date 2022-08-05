@@ -15,10 +15,13 @@ source <(curl -sL http://bit.ly/tonekk-dotfiles-script)
 ### Post-install
 
 Apart from the things that gets installed with the command above, we will need to get some additional stuff:
-* [Source Code Pro for Powerline](https://github.com/powerline/fonts) as the terminal font
-* [chruby](https://github.com/postmodern/chruby) with [ruby-install](https://github.com/postmodern/ruby-install) for a decent ruby-environment
+* [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts) as the terminal font
+* [rbenv](https://github.com/rbenv/rbenv) with [ruby-install](https://github.com/postmodern/ruby-install) for a decent ruby-environment
 * [iterm2](https://www.iterm2.com/)
+* [skhd](https://github.com/koekeishiya/skhd) to remap cmd key
 
-## What does it look like?
+#### TODO
 
-![The prompt with tmux](http://i.imgur.com/GRWL0zv.png)
+* Update `Brewfile` to reflect tools that I currently use
+* Also: Add casks
+* Switch to [alacritty](https://github.com/alacritty/alacritty) and get rid of skhd
