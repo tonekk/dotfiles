@@ -21,3 +21,7 @@ cmd - x [
 cmd - s [
    "iterm2" : skhd -k "ctrl - b" && skhd -k "f1"
 ]
+
+cmd - z [
+   "iterm2" : skhd -k "ctrl - b" && skhd -k "z"
+]
