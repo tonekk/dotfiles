@@ -10,10 +10,6 @@
 	path = zprezto
 	url = git@github.com:tonekk/prezto.git
 	branch = master
-[submodule "nvim"]
-	path = nvim
-	url = git@github.com:tonekk/nvim.git
-	branch = main
 [submodule "nvm"]
 	path = nvm
 	url = https://github.com/nvm-sh/nvm.git
