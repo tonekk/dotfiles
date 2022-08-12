@@ -16,7 +16,7 @@ SYMLINK_FILES=(skhdrc)
 CONFIGDIRS=(bin zprezto tmux go tmuxinator)
 
 # Change to $HOME if not there already
-[ "$(pwd)" != "$HOME" ] && cd ~
+[ "$(pwd)" != "$HOME" ] && cd ~ || exit
 
 # Create directory symlinks
 for DIR in "${CONFIGDIRS[@]}"
@@ -51,13 +51,17 @@ do
 done
 
 # nvim
-mkdir -p $HOME/.local/share/
-ln -s $DOTFILES/nvim $HOME/.local/share/nvim
+mkdir -p "$HOME/.local/share/"
+ln -s "$DOTFILES/nvim" "$HOME/.local/share/nvim"
 
 # .gitconfig special case
 [ -f "$HOME/.gitconfig" ] && rm "$HOME/.gitconfig"
 echo "[include]" > "$HOME/.gitconfig"
 echo "    path = $DOTFILES/gitconfig" >> "$HOME/.gitconfig"
 echo "Created $HOME/.gitconfig"
+
+# symlink ssh config
+[ -f "$HOME/.ssh/config" ] && rm "$HOME/.ssh/config"
+ln -s "$DOTFILES/ssh/config" "$HOME/.ssh/config"
 
 echo "All done"
