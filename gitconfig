@@ -25,6 +25,7 @@
   newHighlight = "green bold 22"
 [push]
   default = simple
+  autoSetupRemote = true
 [core]
   editor = /usr/local/bin/nvim
 [commit]
