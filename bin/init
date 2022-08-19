@@ -10,7 +10,7 @@ DOTFILES="$HOME/etc"
 # Config files array
 CONFIGFILES=(bashrc bash_profile tmux.conf)
 PREZTOFILES=(zlogin zlogout zpreztorc zprofile zshenv zshrc)
-SYMLINK_FILES=(skhdrc)
+SYMLINK_FILES=(alacritty.yml skhdrc)
 
 # Config directories array
 CONFIGDIRS=(bin zprezto tmux go tmuxinator)
