@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#################################################
-# This script creates all the neccessary symlinks
-#################################################
+###################################################
+# This script creates all the neccessary symlinks #
+###################################################
 
 # Dirname of directory where all my dotfiles are
 DOTFILES="$HOME/etc" 
@@ -11,6 +11,7 @@ DOTFILES="$HOME/etc"
 CONFIGFILES=(bashrc bash_profile tmux.conf)
 PREZTOFILES=(zlogin zlogout zpreztorc zprofile zshenv zshrc)
 SYMLINK_FILES=(alacritty.yml skhdrc)
+DOT_CONFIG_FILES=(starship.toml)
 
 # Config directories array
 CONFIGDIRS=(bin zprezto tmux go tmuxinator)
@@ -40,6 +41,15 @@ do
   [ -L "$HOME/.$FILE" ] && rm -f "$HOME/.$FILE"
   ln -s "$DOTFILES/$FILE" "$HOME/.$FILE"
   echo "Created $HOME/.$FILE"
+done
+
+# Create symlinks in ~/.config
+for FILE in "${DOT_CONFIG_FILES[@]}"
+do
+  mkdir -p "$HOME/.config/"
+  [ -L "$HOME/.config/$FILE" ] && rm -f "$HOME/.config/$FILE"
+  ln -s "$DOTFILES/$FILE" "$HOME/.config/$FILE"
+  echo "Created $HOME/.config/$FILE"
 done
 
 # prezto
