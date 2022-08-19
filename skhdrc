@@ -1,27 +1,27 @@
 cmd - h [
-   "iterm2" : skhd -k "ctrl - b" && skhd -k "p"
+   "alacritty" : skhd -k "ctrl - b" && skhd -k "p"
 ]
 cmd - l [
-   "iterm2" : skhd -k "ctrl - b" && skhd -k "n"
+   "alacritty" : skhd -k "ctrl - b" && skhd -k "n"
 ]
 cmd - k [
-   "iterm2" : skhd -k "ctrl - b" && skhd -k "up"
+   "alacritty" : skhd -k "ctrl - b" && skhd -k "up"
 ]
 cmd - j [
-   "iterm2" : skhd -k "pagedown"
+   "alacritty" : skhd -k "pagedown"
 ]
 
 cmd - t [
-   "iterm2" : skhd -k "ctrl - b" && skhd -k "c"
+   "alacritty" : skhd -k "ctrl - b" && skhd -k "c"
 ]
 
 cmd - x [
-   "iterm2" : skhd -k "ctrl - b" && skhd -k "x"
+   "alacritty" : skhd -k "ctrl - b" && skhd -k "x"
 ]
 cmd - s [
-   "iterm2" : skhd -k "ctrl - b" && skhd -k "f1"
+   "alacritty" : skhd -k "ctrl - b" && skhd -k "f1"
 ]
 
 cmd - z [
-   "iterm2" : skhd -k "ctrl - b" && skhd -k "z"
+   "alacritty" : skhd -k "ctrl - b" && skhd -k "z"
 ]

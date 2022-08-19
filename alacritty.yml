@@ -1,7 +1,7 @@
 font:
   normal:
     family: Hack Nerd Font
-  size: 16.0
+  size: 15.0
 
 schemes:
   # Tokyo Night theme, based on both:
