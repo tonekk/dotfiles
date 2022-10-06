@@ -2,6 +2,8 @@ font:
   normal:
     family: Hack Nerd Font
   size: 15.0
+selection:
+  save_to_clipboard: true
 
 schemes:
   tomorrow_night: &tomorrow_night
