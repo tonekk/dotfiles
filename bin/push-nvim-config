@@ -2,11 +2,11 @@
 
 cd "$HOME/etc/nvim/lua/custom/" || exit
 git commit -a
-git push
+git push origin HEAD:main 
 cd "$HOME/etc/nvim/" || exit
 git add lua/custom
 git commit -m'Add new custom commit'
-git push origin
+git push origin HEAD:main 
 cd "$HOME/etc/" || exit
 git add nvim
 git commit -m'Add new nvim commit'
