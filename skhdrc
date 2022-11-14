@@ -25,3 +25,7 @@ cmd - s [
 cmd - z [
    "alacritty" : skhd -k "ctrl - b" && skhd -k "z"
 ]
+
+cmd - q [
+   "alacritty" : skhd -k "escape"
+]
