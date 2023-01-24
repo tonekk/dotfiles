@@ -25,3 +25,4 @@ Apart from the things that gets installed with the command above, we will need t
 
 * Update `Brewfile` to reflect tools that I currently use
 * Get rid of skhd (use alacritty keybindings)
+* Get rid of hammerspoon, probably
