@@ -19,3 +19,6 @@
 [submodule "ssh"]
 	path = ssh
 	url = git@github.com:tonekk/ssh.git
+[submodule "karabiner"]
+	path = karabiner
+	url = git@github.com:tonekk/karabiner.git
