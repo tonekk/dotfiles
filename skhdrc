@@ -1,31 +1,31 @@
 cmd - h [
-   "alacritty" : skhd -k "ctrl - b" && skhd -k "p"
+   "kitty" : skhd -k "ctrl - b" && skhd -k "p"
 ]
 cmd - l [
-   "alacritty" : skhd -k "ctrl - b" && skhd -k "n"
+   "kitty" : skhd -k "ctrl - b" && skhd -k "n"
 ]
 cmd - k [
-   "alacritty" : skhd -k "ctrl - b" && skhd -k "up"
+   "kitty" : skhd -k "ctrl - b" && skhd -k "up"
 ]
 cmd - j [
-   "alacritty" : skhd -k "pagedown"
+   "kitty" : skhd -k "pagedown"
 ]
 
 cmd - t [
-   "alacritty" : skhd -k "ctrl - b" && skhd -k "c"
+   "kitty" : skhd -k "ctrl - b" && skhd -k "c"
 ]
 
 cmd - x [
-   "alacritty" : skhd -k "ctrl - b" && skhd -k "x"
+   "kitty" : skhd -k "ctrl - b" && skhd -k "x"
 ]
 cmd - s [
-   "alacritty" : skhd -k "ctrl - b" && skhd -k "f1"
+   "kitty" : skhd -k "ctrl - b" && skhd -k "f1"
 ]
 
 cmd - z [
-   "alacritty" : skhd -k "ctrl - b" && skhd -k "z"
+   "kitty" : skhd -k "ctrl - b" && skhd -k "z"
 ]
 
 cmd - q [
-   "alacritty" : skhd -k "escape"
+   "kitty" : skhd -k "escape"
 ]
