@@ -1,6 +1,6 @@
 [user]
   name = Finn Heemeyer
-  email = finn.heemeyer@comgy.io
+  email = github@tonekk.de
   signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCvvpeTx30d8JtyCYjmiHn+qkm+At2MEfzEq/+taAPUhlDt53ysIV9o1Q/y0wjZoLTAgz32IVRYxLCLWGSF+EbpQsa37PZGtGIWfrz/2FTtd+pjKvyJFzUEqc12MoSLZqRO5KVbiEPht9+xkR8Pj/+BgGXFc6HQ9zlken13wn3py558T83flP93sxseCGKdjBQy13xCYYXOIVDhhFdE0eM3j/G+oxuwKwPbJ/ZxdTTN+cgBx4ucOqLefk6YD/riKtfd+uZRAMqjiCfqhd2RKWqsDXAEFo+5165pYPUf9zqOIhVWlL8wrr5kCIKjHgBYhW79QzE3kiIgaT+5ER2F31EEN09Mm9A2tl3W4O+VXmz5hP3BztLEgTqeXtfls0k1fwpxkR8iGzBDSD+nMwqW/mfzLxGJC2gQBlpbYIBCAAQM52bPpyr5OB7g8SqxLyFZQtdE7jxtBiecbVBpB98g+pqljOAOS/FRhm6qdMiMJAdhsCCjIHn7EORDGUMqMZ+WNBM=
 [alias]
   ci = commit
