@@ -13,7 +13,7 @@
 [submodule "nvm"]
 	path = nvm
 	url = https://github.com/nvm-sh/nvm.git
-[submodule "nvchad"]
+[submodule "nvim"]
 	path = nvim
 	url = git@github.com:tonekk/nvim.git
 [submodule "ssh"]
