@@ -8,9 +8,9 @@
 DOTFILES="$HOME/etc"
 
 # Config files array
-CONFIGFILES=(bashrc bash_profile tmux.conf)
+CONFIGFILES=(tmux.conf)
 PREZTOFILES=(zlogin zlogout zpreztorc zprofile zshenv zshrc)
-SYMLINK_FILES=(alacritty.yml skhdrc)
+SYMLINK_FILES=(tool-versions alacritty.yml skhdrc)
 DOT_CONFIG_FILES=(starship.toml)
 
 # Config directories array
