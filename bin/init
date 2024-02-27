@@ -14,7 +14,7 @@ SYMLINK_FILES=(tool-versions alacritty.yml skhdrc)
 DOT_CONFIG_FILES=(starship.toml)
 
 # Config directories array
-CONFIGDIRS=(bin zprezto tmux go tmuxinator hammerspoon)
+CONFIGDIRS=(bin zprezto tmux)
 DOT_CONFIG_DIRS=(karabiner)
 
 # Change to $HOME if not there already
@@ -51,8 +51,8 @@ done
 
 # Symlink directories in ~/.config
 for DIR in "${DOT_CONFIG_DIRS[@]}"; do
-	[ -L "$HOME/.$DIR" ] && rm -rf "$HOME/.$DIR"
-	ln -s "$DOTFILES/$DIR" "$HOME/.config/$DIR"
+	[ -L "$HOME/.config/$DIR" ] && rm -rf "$HOME/.config/$DIR"
+	ln -s "$DOTFILES/$DIR" "$HOME/.config/"
 	echo "Created $HOME/.config/.$DIR"
 done
 
@@ -65,7 +65,8 @@ done
 
 # nvim
 mkdir -p "$HOME/.local/share/"
-ln -s "$DOTFILES/nvim" "$HOME/.local/share/nvim"
+[ -L "$HOME/.local/share/nvim" ] && rm -rf "$HOME/.local/share/nvim"
+ln -s "$DOTFILES/nvim" "$HOME/.local/share/"
 
 # .gitconfig special case
 [ -f "$HOME/.gitconfig" ] && rm "$HOME/.gitconfig"
