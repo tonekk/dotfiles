@@ -5,27 +5,15 @@
 [alias]
   ci = commit
   rs = restore
-  s = switch
-  br = branch
-  p = pull
-  pu = push
+  sw = switch
   st = status
-  dis = "!fn() { git di --staged; } ; fn"
+  di = "diff"
+  dis = "diff --staged"
   fixup = "!fn() { git commit --fixup ${1} && GIT_EDITOR=true git rebase --autosquash -i ${1}^; }; fn"
+  am = "commit --amend"
+  an = "commit --amend --no-edit"
 [color]
   ui = true
-[color "diff"]
-  meta = yellow bold
-  commit = green bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
-  whitespace = red reverse
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = "red bold 52"
-  newNormal = "green bold"
-  newHighlight = "green bold 22"
 [push]
   default = simple
   autoSetupRemote = true
@@ -38,3 +26,14 @@
   format = ssh
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[core]
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  line-numbers = true
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default
