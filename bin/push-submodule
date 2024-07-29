@@ -12,7 +12,7 @@ if [[ -z ${SUBMODULE_NAME+x} ]]; then
 fi
 
 if [[ ! -d "$DOTFILES/$SUBMODULE_NAME" ]]; then
-  echo "Submodule '$SUBMODULE_NAME' does exists in dotfiles."
+  echo "Submodule '$SUBMODULE_NAME' does not exist in dotfiles."
   exit 1
 fi
 
