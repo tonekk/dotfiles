@@ -33,6 +33,7 @@
 [delta]
   navigate = true
   line-numbers = true
+  hunk-header-style = omit
 [merge]
   conflictstyle = diff3
 [diff]
