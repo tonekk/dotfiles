@@ -6,9 +6,6 @@
 	path = zprezto
 	url = git@github.com:tonekk/prezto.git
 	branch = master
-[submodule "nvim"]
-	path = nvim
-	url = git@github.com:tonekk/nvim.git
 [submodule "ssh"]
 	path = ssh
 	url = git@github.com:tonekk/ssh.git
