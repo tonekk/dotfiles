@@ -18,7 +18,7 @@ cmd - t [
 cmd - x [
    "kitty" : skhd -k "ctrl - b" && skhd -k "x"
 ]
-cmd - s [
+cmd - i [
    "kitty" : skhd -k "ctrl - b" && skhd -k "f1"
 ]
 
@@ -29,3 +29,11 @@ cmd - z [
 cmd - q [
    "kitty" : skhd -k "escape"
 ]
+
+cmd - s [
+   "kitty" : skhd -k "ctrl - s"
+]
+cmd - w [
+   "kitty" : skhd -k "space" && skhd -k "x"
+]
+
