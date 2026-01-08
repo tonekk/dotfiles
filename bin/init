@@ -15,7 +15,7 @@ DOT_CONFIG_FILES=(starship.toml)
 
 # Config directories array
 CONFIGDIRS=(bin zprezto tmux)
-DOT_CONFIG_DIRS=(karabiner)
+DOT_CONFIG_DIRS=(karabiner wezterm)
 
 # Change to $HOME if not there already
 [ "$(pwd)" != "$HOME" ] && cd ~ || exit
